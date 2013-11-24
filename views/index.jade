@@ -1,5 +1,12 @@
 extends layout
 
 block content
- div.navbar.navbar-default.navbar-fixed-top(id="navigation")
- 
+  div.navbar.navbar-default.navbar-fixed-top(id="navigation")
+    div.container
+      div.navbar-header
+        button.navbar-toggle(type="button",data-toggle="collapse", data-target=".navbar-collapse")
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+            a.navbar-brand(href="about.ares-paas.eu")#{index}
+
